@@ -11,6 +11,7 @@ import { MovieListComponentComponent } from './movie-list-component/movie-list-c
 import { MovieDetailComponentComponent } from './movie-detail-component/movie-detail-component.component';
 import { FavoritesComponentComponent } from './favorites-component/favorites-component.component';
 import { SearchComponentComponent } from './search-component/search-component.component';
+import { SingleMovieComponent } from './single-movie/single-movie.component';
 
 const routes=[
   {path:'',component:HomeComponent},
@@ -26,7 +27,8 @@ const routes=[
     MovieListComponentComponent,
     MovieDetailComponentComponent,
     FavoritesComponentComponent,
-    SearchComponentComponent
+    SearchComponentComponent,
+    SingleMovieComponent
   ],
   imports: [
     BrowserModule,
