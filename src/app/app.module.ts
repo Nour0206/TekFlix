@@ -1,17 +1,19 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import { MovieListComponentComponent } from './movie-list-component/movie-list-component.component';
-import { MovieDetailComponentComponent } from './movie-detail-component/movie-detail-component.component';
 import { FavoritesComponentComponent } from './favorites-component/favorites-component.component';
 import { SearchComponentComponent } from './search-component/search-component.component';
 import { SingleMovieComponent } from './single-movie/single-movie.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { AboutComponentComponent } from './about-component/about-component.component';
+import { ContactComponentComponent } from './contact-component/contact-component.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes=[
   {path:'',component:HomeComponent},
@@ -25,14 +27,17 @@ const routes=[
     HomeComponent,
     NotFoundComponentComponent,
     MovieListComponentComponent,
-    MovieDetailComponentComponent,
     FavoritesComponentComponent,
     SearchComponentComponent,
-    SingleMovieComponent
+    SingleMovieComponent,
+    MovieDetailsComponent,
+    AboutComponentComponent,
+    ContactComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule 
   ],
   providers: [
     provideClientHydration()

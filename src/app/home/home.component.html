@@ -22,9 +22,7 @@
         bottom: 200px;
         right: 370px;
         border-radius: 5px;
-      "
-    >
-      Watch Now <i class="fas fa-arrow-right"></i>
+      ">Watch Now <i class="fas fa-arrow-right"></i>
     </button>
   </div>
   <div class="text-center">
@@ -41,7 +39,8 @@
                 <div class="card-body">
                   <h5 class="card-title text-white">{{film.title}}</h5>
                   <p class="card-text">{{film.description}}</p>
-                  <a href="#" class="btn btn-outline-light">Watch Details</a>
+                  <a href="#" class="btn btn-outline-light" >Watch Details</a>
+                  <!-- [routerLink]="['/movie-details', film.id]" -->
                 </div>
               </div>
             </div>

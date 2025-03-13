@@ -7,6 +7,7 @@ export class Film {
     year?: number;
     genre?: string;
     isNew?: boolean;
+    trailerUrl?: string;
     constructor(
         id?: number, 
         title?: string, 
@@ -15,7 +16,8 @@ export class Film {
         rating?: number, 
         year?: number, 
         genre?: string, 
-        isNew?: boolean
+        isNew?: boolean,
+        trailerUrl?: string
     )
     {
         this.id = id;
@@ -26,6 +28,7 @@ export class Film {
         this.year = year;
         this.genre = genre;  // Corrected from 'game' to 'genre'
         this.isNew = isNew;
+        this.trailerUrl = trailerUrl;
     }
 
 }
@@ -41,7 +44,8 @@ export const FILMS: Film[] = [
         rating: 8.5,
         year: 2008,
         genre: "Action",
-        isNew: true
+        isNew: true,
+        trailerUrl: "https://www.youtube.com/watch?v=abc123"
     },
     {
         id: 2,
@@ -51,7 +55,8 @@ export const FILMS: Film[] = [
         rating: 8.5,
         year: 2000,
         genre: "Action",
-        isNew: false
+        isNew: false,
+        trailerUrl: "https://www.youtube.com/watch?v=xyz456" 
     },
     {
         id: 3,
@@ -61,6 +66,7 @@ export const FILMS: Film[] = [
         rating: 0, // Add a rating if available
         year: 0, // Add a year if available
         genre: "Action", // Add a genre if available
-        isNew: false // Add a token value if available
+        isNew: false,
+        trailerUrl: "https://www.youtube.com/watch?v=def789"  // Add a token value if available
     }
 ];
