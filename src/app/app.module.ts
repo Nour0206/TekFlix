@@ -14,6 +14,8 @@ import { AboutComponentComponent } from './about-component/about-component.compo
 import { ContactComponentComponent } from './contact-component/contact-component.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes=[
   {path:'',component:HomeComponent},
@@ -32,12 +34,15 @@ const routes=[
     SingleMovieComponent,
     MovieDetailsComponent,
     AboutComponentComponent,
-    ContactComponentComponent
+    ContactComponentComponent,
+    FormReactiveComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule 
+    RouterModule ,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

@@ -6,6 +6,7 @@ import { MovieListComponentComponent } from './movie-list-component/movie-list-c
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { AboutComponentComponent } from './about-component/about-component.component';
 import { ContactComponentComponent } from './contact-component/contact-component.component';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 
 const routes: Routes = [
 { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +15,9 @@ const routes: Routes = [
 { path: 'movie-details/:id', component: MovieDetailsComponent },
 { path: 'about', component: AboutComponentComponent },
 { path: 'contact', component: ContactComponentComponent },
+
+{path: 'FormReactive', component: FormReactiveComponent},
+{ path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 {path: '**', component: NotFoundComponentComponent},
 
 

@@ -8,9 +8,7 @@
       filter: brightness(50%);
       background: url('cinema.jfif') no-repeat center center;
       background-size: cover;
-      position: relative;
-    "
-  >
+      position: relative;" >
     <!-- Button positioned at the bottom right -->
     <button
       class="btn btn-outline-light btn-lg"
@@ -39,8 +37,8 @@
                 <div class="card-body">
                   <h5 class="card-title text-white">{{film.title}}</h5>
                   <p class="card-text">{{film.description}}</p>
-                  <a href="#" class="btn btn-outline-light" >Watch Details</a>
-                  <!-- [routerLink]="['/movie-details', film.id]" -->
+                  <a href="#" class="btn btn-outline-light" [routerLink]="['/movie-details', film.id]" >Watch Details</a>
+                  <!--  -->
                 </div>
               </div>
             </div>

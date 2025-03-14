@@ -1,0 +1,16 @@
+<form  [formGroup]="monFormGroup"  (ngSubmit)="onSubmit">
+    <div class="mb-3">
+    <label for="firstname" class="form-label">Firstname</label>
+    <input id="firstname" type="text" class="form-control" formControlName="firstname" name="firstname" />
+    </div>
+    <div class="mb-3">
+    <label for="lastname" class="form-label">Lastname</label>
+    <input id="lastname" type="text" class="form-control"  formControlName=" lastName" name=" lastName" />
+    </div>
+    <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input id="age" type="number" class="form-control"  formControlName="age" name="age"/>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
