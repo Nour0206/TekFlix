@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 const routes=[
   {path:'',component:HomeComponent},
@@ -36,6 +37,7 @@ const routes=[
     AboutComponentComponent,
     ContactComponentComponent,
     FormReactiveComponent,
+    FavoritesComponent,
   
   ],
   imports: [

@@ -18,6 +18,7 @@ const routes: Routes = [
 
 {path: 'FormReactive', component: FormReactiveComponent},
 { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+
 {path: '**', component: NotFoundComponentComponent},
 
 

@@ -15,9 +15,17 @@
           <p>{{film?.description}}</p>
         </div>
         <div class="actions">
-          <button class="btn-watch">Watch Now</button>
+          <button class="btn-watch" (clisk)="openModal()">Watch Now</button>
           <button class="btn-trailer">Watch Trailer</button>
         </div>
       </div>
     </div>
+  </div>
+  <div *ngIf="showModal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">items</span>
+      <iframe *ngif="safeTrailerUrl" [src]="safeTrailerUrl" width="910" height="490" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+    
   </div>
