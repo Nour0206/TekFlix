@@ -1,0 +1,75 @@
+* {
+    background-color: black;
+}
+
+.about-card {
+    padding: 40px;
+    background-color: #141414;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: none;  /* Eliminated border */
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center the content */
+    align-items: center;
+    text-align: center;  /* Center-align the text */
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;  /* Center the heading */
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #ccc;
+    font-size: 1.1rem;
+    text-align: center;  /* Center the paragraph text */
+}
+
+.about-image {
+    flex: 0 0 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures there is no gap between borders */
+}
+
+th, td {
+    border: none;  /* Remove borders from table header and data cells */
+    padding: 12px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}

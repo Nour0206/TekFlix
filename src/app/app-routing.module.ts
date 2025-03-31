@@ -15,7 +15,6 @@ const routes: Routes = [
 { path: 'movie-details/:id', component: MovieDetailsComponent },
 { path: 'about', component: AboutComponentComponent },
 { path: 'contact', component: ContactComponentComponent },
-
 {path: 'FormReactive', component: FormReactiveComponent},
 { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 
